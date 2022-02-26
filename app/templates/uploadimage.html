@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block button %}
+<a class="btn btn-light" role="button" href="{{ url_for('hello_main') }}">Random Sample</a>
+<a class="btn btn-light" role="button" href="{{ url_for('hello_url') }}">Image URL</a>
+<a class="btn btn-primary" role="button" href="{{ url_for('hello_upload') }}">Upload Image</a>
+{% endblock %}
+{% block bsec %}
+<div class="container text-center">
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.imgfile(class="bg-light form-control-sm", type="file", accept="image/*") }}
+        <button class="btn btn-outline-light btn-sm link-secondary border-white" type="submit">
+            <i class="material-icons">file_upload</i>
+        </button>
+    </form>
+</div>
+<br><br>
+{% endblock %}
+{% block img %}
+<img class="img-fluid" src="{{ url_for('send_uploaded_file', filename=filename) }}" alt="" height="70%" width="70%" />
+<br><br>
+{% endblock %}
