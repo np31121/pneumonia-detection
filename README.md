@@ -10,5 +10,6 @@ Built on Azure's Custom Vision, the classification model is trained on 3675 'Pne
 ![image](https://user-images.githubusercontent.com/72313581/155974432-a64d8aa7-647f-44bb-bab7-66c4c26642ad.png)
 ## Deployment
 The model is deployed as a web-service. The website is developed using HTML/CSS/Bootstrap and Flask framework, and hosted using Azure App Service. Bootstrap Studio was also used during development.
+![image](https://user-images.githubusercontent.com/72313581/155989470-174183ed-df2b-4cfd-8f01-c2554db64927.png)
 ## Disclaimer
 This capability is not designed or intended to be implemented or deployed as a substitute for professional medical advice or healthcare opinion, diagnosis, treatment, or the clinical judgment of a healthcare professional, and should not be used as such.
